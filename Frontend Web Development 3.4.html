@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeLens</title>
+  <link rel="stylesheet" href="Frontend3.4.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>VibeLens</h1>
+      <p class="tagline">Discover and explore stunning visual inspiration</p>
+    </div>
+    
+    <form id="search-form">
+      <label for="search-input" class="visually-hidden">Search images</label>
+      <input id="search-input" type="search" placeholder="Search images (e.g., mountains, coffee)..." />
+      <button id="search-button" type="submit">Search</button>
+    </form>
+
+    <div class="chip-container">
+      <button type="button" class="chip">Nature</button>
+      <button type="button" class="chip">Architecture</button>
+      <button type="button" class="chip">Minimal</button>
+      <button type="button" class="chip">Portraits</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="empty-state" class="empty-state">
+      <p>Search above to explore visual results.</p>
+    </div>
+
+    <section id="results"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
